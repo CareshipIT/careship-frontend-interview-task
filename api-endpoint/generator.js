@@ -29,6 +29,10 @@ function sentence() {
 }
 
 exports.sentences = function (count) {
+  if (isNaN(count)) {
+    return '';
+  }
+
   let output = sentence();
 
   for (var i = 1; i < count; i++) {
