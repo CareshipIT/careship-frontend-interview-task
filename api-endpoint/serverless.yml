@@ -67,6 +67,7 @@ functions:
       - http:
           path: random-sentences/{n}
           method: get
+          cors: true
           request:
             parameters:
                 paths:
